@@ -1,0 +1,38 @@
+/* Universal Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* HTML Whole Page */
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+/* CSS Variable Declaration */
+:root {
+  --dark_black: #000000;
+  --pure_white: #ffffff;
+  --sky_blue: #0983f1;
+  --gray: #686868;
+  --h1_font: 7rem;
+  --h2_font: 3.2rem;
+  --h3_font: 2.8rem;
+  --h4_font: 2.4rem;
+  --h5_font: 1.8rem;
+  --p_font: 1.6rem;
+  --font_20px: 2rem;
+  --font_segoe_UI: "Segoe UI";
+}
+
+/* Body Tag */
+body {
+  font-family: "Poppins";
+}
+
+/* All Heading Tsgs */
+/* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+} */
