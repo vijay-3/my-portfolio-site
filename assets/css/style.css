@@ -13,18 +13,18 @@ html {
 
 /* CSS Variable Declaration */
 :root {
-  --dark_black: #000000;
-  --pure_white: #ffffff;
-  --sky_blue: #0983f1;
+  --dark-black: #000000;
+  --pure-white: #ffffff;
+  --sky-blue: #0983f1;
   --gray: #686868;
-  --h1_font: 7rem;
-  --h2_font: 3.2rem;
-  --h3_font: 2.8rem;
-  --h4_font: 2.4rem;
-  --h5_font: 1.8rem;
-  --p_font: 1.6rem;
-  --font_20px: 2rem;
-  --font_segoe_UI: "Segoe UI";
+  --h1-font: 7rem;
+  --h2-font: 3.2rem;
+  --h3-font: 2.8rem;
+  --h4-font: 2.4rem;
+  --h5-font: 1.8rem;
+  --p-font: 1.6rem;
+  --font-20px: 2rem;
+  --font-segoe-UI: "Segoe UI";
 }
 
 /* Body Tag */
@@ -32,7 +32,79 @@ body {
   font-family: "Poppins";
 }
 
-/* All Heading Tsgs */
-/* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+/* All Heading */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0px;
+}
 
-} */
+/* Dark Black Background Color */
+.dark-black-background-color {
+  background-color: var(--dark-black);
+}
+
+/* Dark Black Text Color */
+.dark-black-text-color {
+  color: var(--dark-black);
+}
+
+/* Font Weight 600 */
+.font-weight-600 {
+  font-weight: 600;
+}
+
+/* Gray Text Color */
+.gray-text-color {
+  color: var(--gray);
+}
+
+/* h1 */
+h1 {
+  font-size: var(--h1-font);
+}
+
+/* h2 */
+h2 {
+  font-size: var(--h2-font);
+}
+
+/* h3 */
+h3 {
+  font-size: var(--h3-font);
+}
+
+/* h4 */
+h4 {
+  font-size: var(--h4-font);
+}
+
+/* h5 */
+h5 {
+  font-size: var(--h5-font);
+}
+
+/* Paragraph Size */
+p,
+.para-font-size {
+  font-size: var(--p-font);
+}
+
+/* Segoe Font Family */
+.segoe-font {
+  font-family: var(--font-segoe-UI);
+}
+
+/* Margin Top 100 */
+.margin-top-100 {
+  margin-top: 10rem;
+}
