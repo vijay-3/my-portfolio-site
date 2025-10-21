@@ -3,6 +3,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* HTML Whole Page */
@@ -107,4 +108,67 @@ p,
 /* Margin Top 100 */
 .margin-top-100 {
   margin-top: 10rem;
+}
+
+/* Logo Image */
+#logo-image {
+  width: 90px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+/* Nav Bar Section - Section 1 */
+/* Nav Bar Link */
+.nav-link {
+  font-size: var(--p-font);
+  padding: 1rem 0.2rem;
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0.15rem;
+  background-color: var(--pure-white);
+  bottom: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: 100%;
+  visibility: visible;
+}
+
+/* Nav Bar Toggler */
+.navbar-toggler > .fa-solid.fa-bars {
+  font-size: 2.2rem;
+}
+
+/* Home Section - Section 2.1 */
+.home-section {
+  background-image: url("../image/home-section/mern-stack-logo.png");
+  background-color: var(--dark-black);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+/* Black Shadow On the Image */
+.home-section-layer {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+  z-index: -1;
+}
+
+.home-section .container {
+  height: 86vh;
 }
