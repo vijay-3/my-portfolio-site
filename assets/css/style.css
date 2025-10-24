@@ -3,7 +3,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* HTML Whole Page */
@@ -129,11 +129,13 @@ p,
   content: "";
   position: absolute;
   width: 0px;
-  height: 0.15rem;
+  height: 0.5rem;
   background-color: var(--pure-white);
+  clip-path: polygon(20% 40%, 100% 50%, 0 100%);
   bottom: 0.2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  /* These two lines for spread line line from center to both left and right sidez */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
   visibility: hidden;
   text-align: center;
   transition: all 0.3s ease-in-out;
@@ -159,6 +161,7 @@ p,
   background-position: center;
   z-index: 1;
 }
+
 /* Black Shadow On the Image */
 .home-section-layer {
   top: 0px;
@@ -169,6 +172,34 @@ p,
   z-index: -1;
 }
 
+/* Home Section's Size */
 .home-section .container {
   height: 86vh;
+}
+
+/* About Section - Section 2.2 */
+.about-section {
+  padding: 5rem 0;
+  border-radius: 3rem;
+}
+
+.about-section .container {
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+}
+
+.about-section > .container > div > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-description p {
+  white-space: nowrap;
+}
+
+.blue-line {
+  width: 7rem;
+  height: 0.8rem;
+  background-color: var(--sky-blue);
+  clip-path: polygon(25% 40%, 100% 50%, 0 100%);
 }
