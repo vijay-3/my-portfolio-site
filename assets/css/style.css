@@ -152,7 +152,7 @@ p,
   font-size: 2.2rem;
 }
 
-/* Home Section - Section 2.1 */
+/* Home Section - Section 2 */
 .home-section {
   background-image: url("../image/home-section/mern-stack-logo.png");
   background-color: var(--dark-black);
@@ -177,7 +177,7 @@ p,
   height: 86vh;
 }
 
-/* About Section - Section 2.2 */
+/* About Section - Section 3 */
 .about-section {
   padding: 5rem 0;
   border-radius: 3rem;
@@ -202,4 +202,22 @@ p,
   height: 0.8rem;
   background-color: var(--sky-blue);
   clip-path: polygon(25% 40%, 100% 50%, 0 100%);
+}
+
+/* Skills Section - Section 4 */
+.accordion-button:not(.collapsed) {
+  font-size: 2rem;
+  background-color: lightgrey;
+  color: black;
+}
+
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+  font-size: 2rem;
+  background-color: lightgrey;
+  color: black;
+}
+
+/* Skills Font Size */
+.skills-section > .container span {
+  font-size: 1.3rem;
 }
