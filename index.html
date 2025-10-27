@@ -122,12 +122,14 @@
 
 		<!-- Skills Section - Section 4 -->
 		<section class="skills-section container-fluid segoe-font" id="skills-section">
+
 			<div class="container">
 				<h2 class="font-weight-600">Skills</h2>
 				<div class="blue-line mt-2 mb-4"></div>
 
 				<!-- First Row of Skills -->
-				<div class="skills-row-1 row">
+				<div class="skills-row row">
+
 					<div class="col-lg-6">
 
 						<!-- Frontend Technologies -->
@@ -185,6 +187,30 @@
 								</div>
 							</div>
 						</div>
+
+						<!-- Database Technologies -->
+						<div class="accordion mt-4" id="database-skills-accordion">
+							<div class="accordion-item me-2">
+								<h2 class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#database-skill" aria-controls="database-skill">Database
+										Technologies</button>
+								</h2>
+								<div id="database-skill" class="accordion-collapse collapse"
+									data-bs-parent="#database-skills-accordion">
+									<div class="accordion-body">
+										<div class="d-flex justify-content-between mt-3 mb-3">
+											<span>MongoDB</span>
+											<span>65%</span>
+										</div>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar"
+												style="width: 65%; background-color: #4db33b;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<!-- Backend Technologies -->
@@ -219,42 +245,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
 
-				<!-- Second Row of Skills -->
-				<div class="skills-row-2 row mt-4">
-					<div class="col-lg-6">
-
-						<!-- Database Technologies -->
-						<div class="accordion" id="database-skills-accordion">
-							<div class="accordion-item me-2">
-								<h2 class="accordion-header">
-									<button class="accordion-button" type="button" data-bs-toggle="collapse"
-										data-bs-target="#database-skill" aria-controls="database-skill">Database
-										Technologies</button>
-								</h2>
-								<div id="database-skill" class="accordion-collapse collapse"
-									data-bs-parent="#database-skills-accordion">
-									<div class="accordion-body">
-										<div class="d-flex justify-content-between mt-3 mb-3">
-											<span>MongoDB</span>
-											<span>65%</span>
-										</div>
-										<div class="progress">
-											<div class="progress-bar" role="progressbar"
-												style="width: 65%; background-color: #4db33b;"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Tools -->
-					<div class="col-lg-6">
-						<div class="accordion" id="tools-skills-accordion">
-							<div class="accordion-item mt-4 mt-lg-0 me-2">
+						<!-- Tools -->
+						<div class="accordion mt-4" id="tools-skills-accordion">
+							<div class="accordion-item  me-2">
 								<h2 class="accordion-header">
 									<button class="accordion-button" type="button" data-bs-toggle="collapse"
 										data-bs-target="#tools-skill" aria-controls="tools-skill">Tools</button>
@@ -271,12 +265,12 @@
 												style="width: 50%; background-color: #f05032;"></div>
 										</div>
 										<div class="d-flex justify-content-between mt-3 mb-3">
-											<span>vs Code</span>
+											<span>VS Code</span>
 											<span>90%</span>
 										</div>
 										<div class="progress">
 											<div class="progress-bar" role="progressbar"
-												style="width: 50%; background-color: #007acc;"></div>
+												style="width: 90%; background-color: #007acc;"></div>
 										</div>
 									</div>
 								</div>
