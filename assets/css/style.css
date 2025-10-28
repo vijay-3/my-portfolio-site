@@ -112,7 +112,7 @@ p,
 
 /* Logo Image */
 #logo-image {
-  width: 70px;
+  width: 60px;
   height: 50px;
   border-radius: 10px;
 }
@@ -204,6 +204,22 @@ p,
   clip-path: polygon(25% 40%, 100% 50%, 0 100%);
 }
 
+.about-me-description > h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.about-me-description > h2::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0.7rem;
+  background-color: var(--sky-blue);
+  clip-path: polygon(25% 40%, 100% 50%, 0 100%);
+  bottom: -0.8rem;
+  
+}
+
 /* Skills Section - Section 4 */
 .accordion-button:not(.collapsed) {
   font-size: 2rem;
@@ -217,7 +233,70 @@ p,
   color: black;
 }
 
-/* Skills Font Size */
+.skills-section > .container > h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.skills-section > .container > h2::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 0.7rem;
+  background-color: var(--sky-blue);
+  clip-path: polygon(25% 40%, 100% 50%, 0 100%);
+  bottom: -0.8rem;
+}
+
 .skills-section > .container span {
   font-size: 1.3rem;
+}
+
+.skills-section .container {
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+}
+
+/* Education & Course Certification Section */
+.education-course-section {
+  padding: 5rem 0;
+}
+
+.education-course-row > div > h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.education-col > h2::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0.7rem;
+  background-color: var(--sky-blue);
+  clip-path: polygon(25% 40%, 100% 50%, 0 100%);
+  bottom: -0.8rem;
+}
+
+.course-col > h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.course-col > h2::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 0.7rem;
+  background-color: var(--sky-blue);
+  clip-path: polygon(25% 40%, 100% 50%, 0 100%);
+  bottom: -0.8rem;
+}
+
+.education-course-section .container span {
+  font-size: 1.3rem;
+}
+
+.education-course-section .container {
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.2);
+  padding: 3rem;
 }
