@@ -217,7 +217,6 @@ p,
   background-color: var(--sky-blue);
   clip-path: polygon(25% 40%, 100% 50%, 0 100%);
   bottom: -0.8rem;
-  
 }
 
 /* Skills Section - Section 4 */
@@ -299,4 +298,35 @@ p,
 .education-course-section .container {
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.2);
   padding: 3rem;
+}
+
+/* Portfolio Section */
+#project-section > div > h2 {
+  position: relative;
+  display: inline-block;
+}
+
+#project-section > div > h2::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 0.7rem;
+  background-color: var(--sky-blue);
+  clip-path: polygon(25% 40%, 100% 50%, 0 100%);
+  bottom: -0.8rem;
+}
+
+.custom-card-hover-effect {
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-card-hover-effect:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.project-col-1 div div a {
+  color: var(--dark-black);
+  background-color: lightcoral;
+  font-weight: bold;
 }
