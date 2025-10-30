@@ -321,12 +321,16 @@ p,
 }
 
 .custom-card-hover-effect:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.2);
 }
 
-.project-col-1 div div a {
-  color: var(--dark-black);
-  background-color: lightcoral;
+.card-button-style {
+  background-color: var(--dark-black);
+  color: var(--pure-white);
   font-weight: bold;
+}
+
+.card-button-style:hover {
+  border: 1px solid black;
 }
