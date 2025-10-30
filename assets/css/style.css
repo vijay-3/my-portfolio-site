@@ -256,7 +256,7 @@ p,
   padding: 3rem;
 }
 
-/* Education & Course Certification Section */
+/* Education & Course Certification Section 5 */
 .education-course-section {
   padding: 5rem 0;
 }
@@ -300,7 +300,7 @@ p,
   padding: 3rem;
 }
 
-/* Portfolio Section */
+/* Project Section - Section 6 */
 #project-section > div > h2 {
   position: relative;
   display: inline-block;
@@ -333,4 +333,57 @@ p,
 
 .card-button-style:hover {
   border: 1px solid black;
+}
+
+/* Contact Section - Section 7 */
+.contact-section > div > h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-section > div > h2::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 0.7rem;
+  background-color: var(--sky-blue);
+  clip-path: polygon(25% 40%, 100% 50%, 0 100%);
+  bottom: -0.8rem;
+}
+
+form {
+  box-shadow: 0 0 2rem color-mix(in srgb, var(--gray), transparent 75%);
+}
+
+input,
+textarea,
+.submit-btn {
+  font-size: var(--p-font);
+}
+
+::placeholder {
+  opacity: 0.7 !important;
+}
+
+.contact-section textarea {
+  resize: none;
+}
+
+.submit-btn {
+  padding: 1rem 3rem;
+  background-color: var(--dark-black);
+  color: var(--pure-white);
+  opacity: 0.7;
+  transition: all 0.4s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: var(--dark-black);
+  color: var(--pure-white);
+  opacity: 1;
+}
+
+.thank-you-message {
+  font-family: var(--font-segoe-UI);
+  display: none;
 }
