@@ -436,7 +436,7 @@ textarea,
 
 /* Meadia Query */
 /* 1. Tablet Screen */
-@media (max-width: 922px) {
+@media (max-width: 992px) {
   /* CSS Variable */
   :root {
     --h1-font: 5rem;
@@ -444,15 +444,6 @@ textarea,
   }
 
   /* Nav Link */
-  .nav-link {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-link::before {
-    bottom: 0.5rem;
-  }
-
   .nav-link:hover::before,
   .nav-link.active::before {
     width: 70%;
