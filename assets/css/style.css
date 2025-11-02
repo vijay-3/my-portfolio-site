@@ -110,6 +110,7 @@ p,
   margin-top: 10rem;
 }
 
+/* Nav Bar Section - Section 1 */
 /* Logo Image */
 #logo-image {
   width: 60px;
@@ -117,7 +118,6 @@ p,
   border-radius: 10px;
 }
 
-/* Nav Bar Section - Section 1 */
 /* Nav Bar Link */
 .nav-link {
   font-size: var(--p-font);
@@ -230,6 +230,11 @@ p,
   font-size: 2rem;
   background-color: lightgrey;
   color: black;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  z-index: auto;
 }
 
 .skills-section > .container > h2 {
@@ -388,7 +393,7 @@ textarea,
   display: none;
 }
 
-/* Footer Section - Section 10 */
+/* Footer Section - Section 8 */
 .footer-section {
   background-color: var(--dark-black);
   padding: 5rem;
@@ -427,4 +432,80 @@ textarea,
 .social-icons i:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+
+/* Meadia Query */
+/* 1. Tablet Screen */
+@media (max-width: 922px) {
+  /* CSS Variable */
+  :root {
+    --h1-font: 5rem;
+    --h2-font: 3rem;
+  }
+
+  /* Nav Link */
+  .nav-link {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-link::before {
+    bottom: 0.5rem;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 70%;
+  }
+}
+
+/* 2. Mobile Screen */
+@media (max-width: 600px) {
+  /* CSS Variable */
+  :root {
+    --h1-font: 3.8rem;
+    --h2-font: 2.8rem;
+    --h3-font: 2.3rem;
+    --p-font: 1.3rem;
+  }
+
+  /* Common CSS */
+  .margin-top-100 {
+    margin-top: 5rem;
+  }
+
+  /* About Section - Section 3 */
+  .about-section {
+    padding: 0;
+  }
+
+  /* Skills Section - Section 4 */
+  .accordion-button:not(.collapsed) {
+    font-size: 1.8rem;
+  }
+
+  .accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+    font-size: 1.8rem;
+  }
+
+  .skills-section > .container span {
+    font-size: 1.1rem;
+  }
+
+  /* Education & Course Section - Section 5 */
+  .education-course-section {
+    padding: 2rem 0;
+  }
+
+  /* Footer Section - Section 8 */
+  .contact-details i {
+    font-size: 1.2rem;
+    padding-right: 1.8rem;
+  }
+
+  .social-icons i {
+    font-size: 1.2rem;
+    width: 2.8rem;
+    height: 2.8rem;
+  }
 }
