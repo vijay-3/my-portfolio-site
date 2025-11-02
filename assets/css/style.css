@@ -446,7 +446,7 @@ textarea,
   /* Nav Link */
   .nav-link:hover::before,
   .nav-link.active::before {
-    width: 70%;
+    visibility: hidden;
   }
 }
 
