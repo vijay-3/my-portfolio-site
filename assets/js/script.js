@@ -43,3 +43,27 @@ document.addEventListener("click", (collapseHappen) => {
     BOOTSTRAP_COLLAPSE.hide();
   }
 });
+
+// Add to navigation bar active feature
+const ALL_SECTIONS = document.querySelectorAll("section");
+const ALL_NAV_BTNS = document.querySelectorAll(".nav-link");
+
+// Function for highlight navigation bar based on visible
+window.onscroll = () => {
+  ALL_SECTIONS.forEach((section) => {
+    const WINDOW_TOP = window.scrollY;
+    const SECTION_TOP = section.offsetTop - 200;
+    const SECTION_HEIGHT = section.offsetHeight;
+    const SECTION_ID = section.getAttribute("id");
+    if (
+      WINDOW_TOP >= SECTION_TOP &&
+      WINDOW_TOP < SECTION_TOP + SECTION_HEIGHT
+    ) {
+      ALL_NAV_BTNS.forEach((linkBtn) => {
+        linkBtn.classList.remove("active");
+        console.log(SECTION_ID);
+		document.querySelector(`.nav-link[href="#${SECTION_ID}"]`).classList.add("active");
+      });
+    }
+  });
+};
