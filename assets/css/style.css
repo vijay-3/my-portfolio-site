@@ -3,13 +3,12 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  /* overflow: hidden; */
+  scroll-behavior: smooth;
 }
 
 /* HTML Whole Page */
 html {
   font-size: 10px;
-  scroll-behavior: smooth;
 }
 
 /* CSS Variable Declaration */
@@ -145,6 +144,15 @@ p,
 .nav-link.active::before {
   width: 100%;
   visibility: visible;
+}
+
+/* Resume Button */
+.resume-button {
+  transition: all 0.4s ease-in-out;
+}
+
+.resume-button:hover {
+  opacity: 0.8;
 }
 
 /* Nav Bar Toggler */
