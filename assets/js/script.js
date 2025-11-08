@@ -84,5 +84,6 @@ const ROLE_TYPE_EFFECT = new Typed(".role-text", {
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 300,
+  startDelay: 500,
   shuffle: true,
 });
