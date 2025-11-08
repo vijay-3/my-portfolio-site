@@ -62,8 +62,27 @@ window.onscroll = () => {
       ALL_NAV_BTNS.forEach((linkBtn) => {
         linkBtn.classList.remove("active");
         console.log(SECTION_ID);
-		document.querySelector(`.nav-link[href="#${SECTION_ID}"]`).classList.add("active");
+        document
+          .querySelector(`.nav-link[href="#${SECTION_ID}"]`)
+          .classList.add("active");
       });
     }
   });
 };
+
+// Add the typing effect to role names
+const ROLE_TYPE_EFFECT = new Typed(".role-text", {
+  strings: [
+    "Web Developer",
+    "Front-End Developer",
+    "Back-End Developer",
+    "React.js Developer",
+    "MERN Stack Developer",
+    "Full-Stack Web Developer",
+  ],
+  loop: true,
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 300,
+  shuffle: true,
+});
