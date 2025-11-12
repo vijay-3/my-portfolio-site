@@ -21,7 +21,6 @@ function changeLogo() {
   }
   const LOGO_IMAGE = document.getElementById("logo-image");
   LOGO_IMAGE.src = LOGO_PATH;
-  console.log(LOGO_PATH);
 }
 
 // Call the logo change function specific interval
@@ -61,7 +60,6 @@ window.onscroll = () => {
     ) {
       ALL_NAV_BTNS.forEach((linkBtn) => {
         linkBtn.classList.remove("active");
-        console.log(SECTION_ID);
         document
           .querySelector(`.nav-link[href="#${SECTION_ID}"]`)
           .classList.add("active");
@@ -81,9 +79,57 @@ const ROLE_TYPE_EFFECT = new Typed(".role-text", {
     "Full-Stack Web Developer",
   ],
   loop: true,
-  typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 300,
-  startDelay: 500,
+  typeSpeed: 150,
+  backSpeed: 150,
+  backDelay: 500,
+  startDelay: 100,
   shuffle: true,
+});
+
+// Create E-mail feature for our website using email.js
+
+// Make the authentication our website with email js
+(function () {
+  emailjs.init({ publicKey: "aThx1hLQbNZV-H2w5" });
+})();
+
+// Get the details of user input in form
+const CONTACT_FORM = document.getElementById("contact-form");
+
+CONTACT_FORM.addEventListener("submit", (submitEvent) => {
+  submitEvent.preventDefault();
+
+  const CONTACT_FORM_DATA = {
+    userName: document.getElementById("visitor-name").value,
+    userEmail: document.getElementById("visitor-email").value,
+    userMessage: document.getElementById("visitor-message").value,
+  };
+
+  //   Send e-mail to owner of the website
+  const ACKNOWLEDGEMENT_MSG =
+    document.getElementsByClassName("thank-you-message")[0];
+  emailjs
+    .send("service_3yesl79", "template_1xvz831", CONTACT_FORM_DATA)
+    .then(() => {
+      // Show the than you message after submit the form
+      ACKNOWLEDGEMENT_MSG.style.display = "block";
+      ACKNOWLEDGEMENT_MSG.style.fontWeight = 400;
+      ACKNOWLEDGEMENT_MSG.style.color = "green";
+      setTimeout(() => {
+        document.getElementById("visitor-name").value = "";
+        document.getElementById("visitor-email").value = "";
+        document.getElementById("visitor-message").value = "";
+        // CONTACT_FORM.reset();	This is alternative for clear the input fields in form
+      }, 500);
+      setTimeout(() => {
+        ACKNOWLEDGEMENT_MSG.style.display = "none";
+      }, 5000);
+    })
+    .catch(() => {
+      ACKNOWLEDGEMENT_MSG.textContent =
+        "Something went wrong. Please try again...";
+      ACKNOWLEDGEMENT_MSG.style.fontWeight = 500;
+      ACKNOWLEDGEMENT_MSG.style.color = "red";
+      ACKNOWLEDGEMENT_MSG.style.display = "block";
+    });
 });
